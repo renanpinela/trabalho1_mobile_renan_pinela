@@ -1,11 +1,22 @@
 import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground, Image } from 'react-native';
-import React from "react";
+import React, { useState } from "react";
 import { styles } from './styles';
-import logo from './src/img/logo.png'
+import logo from './src/img/logo.png';
+// import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 const image = {uri: 'https://cdn.wallpapersafari.com/53/88/SBpLfJ.jpg'}
 
 const App = () => {
+
+  // const [password, setPassword] = useState(''); 
+  
+  // const [showPassword, setShowPassword] = useState(false); 
+
+  // const toggleShowPassword = () => { 
+  //     setShowPassword(!showPassword); 
+  // };
+
+
   return (
     <View style={styles.container1}>
       <ImageBackground source={image} style={styles.container}>
@@ -20,12 +31,21 @@ const App = () => {
       placeholder="E-mail or Phone Number"
       />
       <TextInput
-      secureTextEntry={true}
+      secureTextEntry={true} //change to !showPassword
+      // value={password}
       style={styles.input}
-      onChangeText={()=>{}}
+      onChangeText={()=>{}} //change to setPassword
       placeholderTextColor='#555'
       placeholder="Password"
       />
+      {/* <MaterialCommunityIcons 
+      name={showPassword ? 'eye-off' : 'eye'} 
+      size={24} 
+      color="#aaa"
+      style={styles.icon} 
+      onPress={toggleShowPassword} 
+      /> */}
+
 
       <Text style={styles.textBlue}>Forgot your password?</Text>
       <Text style={styles.textBlue}>Use a password manager?</Text>

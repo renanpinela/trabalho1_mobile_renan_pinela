@@ -58,5 +58,8 @@ export const styles = StyleSheet.create({
         padding: 157,
         width: 250,
         height: 250,
-    }
+    },
+    // icon: { 
+    //     marginLeft: 10, 
+    // },
 });
