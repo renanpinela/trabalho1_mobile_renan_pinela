@@ -53,4 +53,10 @@ export const styles = StyleSheet.create({
         color: '#088F8F',
         fontSize: 11
     },
+    logo: {
+        opacity: 0.3,
+        padding: 157,
+        width: 250,
+        height: 250,
+    }
 });
