@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, View, TextInput, TouchableOpacity, ImageBackground } from 'react-native';
 import React, { useEffect, useState } from "react";
 import { styles } from './styles';
 
+const image = {uri: 'https://cdn.wallpapersafari.com/53/88/SBpLfJ.jpg'}
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <View style={styles.container1}>
+      <ImageBackground source={image} resizeMode="cover" style={styles.container}>
       <Text style={styles.title1}>Welcome back!</Text>
       <Text style={styles.title2}>We're so excited to see you again!</Text>
 
@@ -30,6 +32,7 @@ const App = () => {
       <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Log In</Text>
       </TouchableOpacity>
+      </ImageBackground>
     </View>
   );
 }

@@ -7,6 +7,9 @@ export const styles = StyleSheet.create({
         padding: 70,
         paddingHorizontal: 30,
     },
+    container1: {
+        flex: 1,
+    },
     title1: {
         color: '#fff',
         fontSize: 24,
@@ -49,5 +52,5 @@ export const styles = StyleSheet.create({
         marginTop: 12,
         color: '#088F8F',
         fontSize: 11
-    }
+    },
 });
